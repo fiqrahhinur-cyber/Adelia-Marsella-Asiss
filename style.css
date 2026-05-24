@@ -1,0 +1,121 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background:#0f0f0f;
+  color:white;
+}
+
+.hero{
+  height:100vh;
+  background:url('foto2.jpg') center/cover;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.overlay{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.55);
+}
+
+.content{
+  position:relative;
+  z-index:2;
+}
+
+.profile{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid rgba(255,255,255,0.2);
+  margin-bottom:20px;
+}
+
+.content h1{
+  font-size:3rem;
+  margin-bottom:10px;
+}
+
+.content p{
+  color:#d0d0d0;
+  letter-spacing:1px;
+}
+
+.about{
+  padding:100px 20px;
+  text-align:center;
+  background:#151515;
+}
+
+.about h2{
+  font-size:2rem;
+  margin-bottom:30px;
+}
+
+.about-box{
+  max-width:700px;
+  margin:auto;
+  background:#1d1d1d;
+  padding:40px;
+  border-radius:20px;
+  line-height:2;
+  color:#d7d7d7;
+}
+
+.gallery{
+  padding:100px 20px;
+  text-align:center;
+}
+
+.gallery h2{
+  font-size:2rem;
+  margin-bottom:40px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.grid img{
+  width:100%;
+  height:320px;
+  object-fit:cover;
+  border-radius:20px;
+  transition:0.4s;
+}
+
+.grid img:hover{
+  transform:scale(1.03);
+}
+
+footer{
+  padding:30px;
+  text-align:center;
+  color:#888;
+  background:black;
+}
+
+@media(max-width:768px){
+
+  .content h1{
+    font-size:2.2rem;
+  }
+
+  .profile{
+    width:110px;
+    height:110px;
+  }
+
+}
